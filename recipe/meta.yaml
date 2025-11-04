@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-gcp-monitoring" %}
-{% set version = "1.10.0a0" %}
+{% set version = "1.11.0a0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_gcp_monitoring-{{ version }}.tar.gz
-  sha256: 48520fe053d61667ca73a2dd64d4940200cc1b9063dbbf4e380728941b3da2e9
+  sha256: 386276eddbbd978a6f30fafd3397975beeb02a1302bdad554185242a8e2c343c
 
 build:
   noarch: python
