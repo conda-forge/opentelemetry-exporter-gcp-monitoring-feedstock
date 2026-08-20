@@ -1,13 +1,13 @@
 {% set name = "opentelemetry-exporter-gcp-monitoring" %}
-{% set version = "1.14.0a0" %}
+{% set version = "1.15.0a0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_gcp_monitoring-{{ version }}.tar.gz
-  sha256: 5d0abd42f93a11cd99bf55dcd4b98423d8c9989505bcccf6c975bd4a4f050395
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_gcp_monitoring-{{ version }}.tar.gz
+  sha256: 4891cd35d229e55791268a2e5fe213e392116e73e362371ad96e72ef3f9bf841
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - opentelemetry-api ~=1.30
     - opentelemetry-sdk ~=1.30
     - opentelemetry-resourcedetector-gcp <1.15,>=1.5.0dev0
+    # - typing_extensions 
     # - typing_extensions 
     # - typing_extensions 
 
